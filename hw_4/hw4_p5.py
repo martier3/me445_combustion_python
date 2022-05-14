@@ -28,7 +28,7 @@ mix_phases = [(gas, 1.0)]
 fuel_species = 'CH4'
 
 # equivalence ratio range
-npoints = 50
+npoints = 500
 phi = np.linspace(0.3, 3.5, npoints)
 
 ##############################################################################
@@ -64,7 +64,9 @@ with open(csv_file, 'w', newline='') as outfile:
         writer.writerow([phi[i], tad[i]] + list(xeq[:, i]))
 print('Output written to {0}'.format(csv_file))
 
+plt.figure(1)
 plt.plot(phi, tad)
-plt.title('Adiabatic flame temp vs. Equivalence Ratio')
-plt.xlabel('Equivalence ratio')
-plt.ylabel('Adiabatic flame temperature [K]')
+plt.xlabel('Equivalence Ratio')
+plt.ylabel('Temperature (K)')
+plt.title('Equivalence Ratio vs. Adiabatic Temp (K)')
+plt.savefig('adiabatic_temp.png')
