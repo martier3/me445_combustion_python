@@ -38,11 +38,7 @@ plt.rcParams['figure.autolayout'] = True
 To = 300
 
 # Inlet Pressure in Pascals
-<<<<<<< HEAD
 Po = 101325 * 10
-=======
-Po = 101325
->>>>>>> origin/main
 
 # Minimim value of phi to calculate
 phi_min = 0.5
@@ -63,17 +59,14 @@ fuel = 'CH4'
 oxidizer = {'O2':1.0, 'N2':3.76}
 
 # name of the file to save the flame speed plot in
-<<<<<<< HEAD
 flame_speed_file = 'flame_speed_equivalence_ratio_10atm.png'
 
 # name of the file to save the sensitivity plot in
 sensitivity_file = 'reaction_sensitivity_10atm.png'
-=======
 flame_speed_file = 'flame_speed_equivalence_ratio.png'
 
 # name of the file to save the sensitivity plot in
 sensitivity_file = 'reaction_sensitivity.png'
->>>>>>> origin/main
 
 # loglevel = 1 prints out solution progress
 # loglevel = 0 does not print any progress information 
